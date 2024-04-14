@@ -198,6 +198,12 @@ plugins {
     session-manager { path "session-manager"; }
 }
 
+ui {
+    pane_frames {
+        hide_session_name false
+    }
+}
+
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed
 // Options:
@@ -211,7 +217,7 @@ plugins {
 //    - true
 //    - false (Default)
 //
-// simplified_ui true
+simplified_ui true
 
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
@@ -278,7 +284,8 @@ pane_frames false
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "tokyo-night-light"
+//theme "tokyo-night-light"
+theme "nord"
 
 // The name of the default layout to load on startup
 // Default: "default"
